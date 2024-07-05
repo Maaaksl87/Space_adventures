@@ -1,3 +1,52 @@
 body {
-  background: #9e5f5f;
+  margin: 0;
+}
+
+.mainSectionWrapper {
+  background-image: linear-gradient(to bottom, #161616, #282828);
+  max-width: 1600px;
+}
+.mainSectionWrapper .mainSection {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.mainSectionWrapper .mainSection__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainSectionWrapper .mainSection__header-firstBlock {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.mainSectionWrapper .mainSection__header-firstBlock-logo {
+  padding: 17px 0;
+}
+.mainSectionWrapper .mainSection__header-firstBlock-linksWrap a {
+  padding: 27px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  transition: 0.5s;
+}
+.mainSectionWrapper .mainSection__header-firstBlock-linksWrap a:hover {
+  background-color: blue;
+}
+.mainSectionWrapper .mainSection__header-lastBlock {
+  display: none;
+  gap: 12px;
+}
+.mainSectionWrapper .mainSection__header-lastBlock-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 18.75px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

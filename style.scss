@@ -1,3 +1,56 @@
 body {
-  background: #9e5f5f;
+  margin: 0;
+}
+
+.mainSectionWrapper {
+  background-image: linear-gradient(to bottom, #161616, #282828);
+  max-width: 1600px;
+  .mainSection {
+    max-width: 1300px;
+    margin: 0 auto;
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-firstBlock {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+
+        &-logo {
+          padding: 17px 0;
+        }
+
+        &-linksWrap {
+          a {
+            padding: 27px 15px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #ffffff;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            transition: 0.5s;
+          }
+          a:hover {
+            background-color: blue;
+          }
+        }
+      }
+      &-lastBlock {
+        display: none;
+        gap: 12px;
+        &-title {
+          font-family: "Roboto", sans-serif;
+          font-size: 16px;
+          font-weight: 900;
+          line-height: 18.75px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+      }
+    }
+  }
 }
