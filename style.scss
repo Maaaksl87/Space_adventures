@@ -52,5 +52,19 @@ body {
         }
       }
     }
+    &__content {
+      &__image {
+        &__controls {
+          &-count {
+          }
+          &__arrows {
+            &-left {
+            }
+            &-right {
+            }
+          }
+        }
+      }
+    }
   }
 }
