@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
 body {
   margin: 0;
 }
@@ -53,16 +56,63 @@ body {
       }
     }
     &__content {
+      border-top: 4px solid white;
+      border-bottom: 4px solid white;
+      padding: 25px 0 45px 0;
       &__image {
+        position: relative;
+        height: 310px;
         &__controls {
+          display: flex;
+          align-items: center;
+          gap: 55px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          padding: 13px 20px;
+          background-color: #181818;
           &-count {
+            color: #ffffff;
+            font-family: "Orbitron", sans-serif;
           }
+
           &__arrows {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
             &-left {
+              img {
+                transform: rotate(180deg);
+                border: 2px solid white;
+                padding: 15px 10px;
+                transition: 0.2s;
+                &:hover {
+                  background-color: #5f5f5f;
+                  border: 2px solid #5f5f5f;
+                }
+              }
             }
             &-right {
+              img {
+                border: 2px solid white;
+                padding: 15px 10px;
+                transition: 0.2s;
+                &:hover {
+                  background-color: #5f5f5f;
+                  border: 2px solid #5f5f5f;
+                }
+              }
             }
           }
+        }
+      }
+
+      &__desc {
+        &-title {
+        }
+
+        &-more {
         }
       }
     }
