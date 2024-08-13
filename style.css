@@ -16,6 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 70px;
 }
 .mainSectionWrapper .mainSection__header-firstBlock {
   display: flex;
@@ -24,6 +25,11 @@ body {
 }
 .mainSectionWrapper .mainSection__header-firstBlock-logo {
   padding: 17px 0;
+}
+@media screen and (max-width: 767px) {
+  .mainSectionWrapper .mainSection__header-firstBlock-linksWrap {
+    display: none;
+  }
 }
 .mainSectionWrapper .mainSection__header-firstBlock-linksWrap a {
   padding: 27px 15px;
@@ -34,7 +40,8 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
-  transition: 0.5s;
+  cursor: pointer;
+  transition: 0.1s;
 }
 .mainSectionWrapper .mainSection__header-firstBlock-linksWrap a:hover {
   background-image: linear-gradient(to top right, rgba(202, 62, 197, 0.8941176471), #ea5198, #f2a829);
@@ -42,6 +49,11 @@ body {
 .mainSectionWrapper .mainSection__header-lastBlock {
   display: none;
   gap: 12px;
+}
+@media screen and (max-width: 767px) {
+  .mainSectionWrapper .mainSection__header-lastBlock {
+    display: flex;
+  }
 }
 .mainSectionWrapper .mainSection__header-lastBlock-title {
   font-family: "Roboto", sans-serif;
@@ -63,13 +75,15 @@ body {
 }
 .mainSectionWrapper .mainSection__content__image {
   position: relative;
-  height: 310px;
+}
+.mainSectionWrapper .mainSection__content__image img {
+  width: 100%;
 }
 .mainSectionWrapper .mainSection__content__image__controls {
+  position: absolute;
   display: flex;
   align-items: center;
   gap: 55px;
-  position: absolute;
   left: 0;
   bottom: 0;
   padding: 13px 20px;
@@ -83,12 +97,15 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 .mainSectionWrapper .mainSection__content__image__controls__arrows-left img {
   transform: rotate(180deg);
   border: 2px solid white;
   padding: 15px 10px;
   transition: 0.2s;
+  width: 15px;
+  height: 6px;
 }
 .mainSectionWrapper .mainSection__content__image__controls__arrows-left img:hover {
   background-color: #5f5f5f;
@@ -98,6 +115,8 @@ body {
   border: 2px solid white;
   padding: 15px 10px;
   transition: 0.2s;
+  width: 15px;
+  height: 6px;
 }
 .mainSectionWrapper .mainSection__content__image__controls__arrows-right img:hover {
   background-color: #5f5f5f;
@@ -151,6 +170,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  cursor: pointer;
 }
 .mainSectionWrapper .mainSection__content__desc-more-btnWrap-text {
   color: white;
