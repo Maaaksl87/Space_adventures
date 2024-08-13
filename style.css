@@ -12,6 +12,16 @@ body {
   margin: 0 auto;
   padding-bottom: 175px;
 }
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .mainSectionWrapper .mainSection {
+    max-width: calc(1000px + 300 * (100vw - 1100px) / 500);
+  }
+}
+@media (min-width: 767px) and (max-width: 1100px) {
+  .mainSectionWrapper .mainSection {
+    max-width: calc(715px + 285 * (100vw - 767px) / 333);
+  }
+}
 .mainSectionWrapper .mainSection__header {
   display: flex;
   align-items: center;
@@ -73,6 +83,18 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .mainSectionWrapper .mainSection__content {
+    padding: calc(15px + 10 * (100vw - 1100px) / 500) 0 0 0;
+    gap: calc(10px + 15 * (100vw - 1100px) / 500);
+  }
+}
+@media (min-width: 767px) and (max-width: 1100px) {
+  .mainSectionWrapper .mainSection__content {
+    padding: calc(9px + 6 * (100vw - 767px) / 333) 0 0 0;
+    gap: calc(9px + 1 * (100vw - 767px) / 333);
+  }
+}
 .mainSectionWrapper .mainSection__content__image {
   position: relative;
 }
@@ -111,6 +133,11 @@ body {
   background-color: #5f5f5f;
   border: 2px solid #5f5f5f;
 }
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .mainSectionWrapper .mainSection__content__image__controls__arrows-left img {
+    padding: calc(10px + 5 * (100vw - 1100px) / 500) calc(7px + 3 * (100vw - 1100px) / 500);
+  }
+}
 .mainSectionWrapper .mainSection__content__image__controls__arrows-right img {
   border: 2px solid white;
   padding: 15px 10px;
@@ -122,6 +149,11 @@ body {
   background-color: #5f5f5f;
   border: 2px solid #5f5f5f;
 }
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .mainSectionWrapper .mainSection__content__image__controls__arrows-right img {
+    padding: calc(10px + 5 * (100vw - 1100px) / 500) calc(7px + 3 * (100vw - 1100px) / 500);
+  }
+}
 .mainSectionWrapper .mainSection__content__desc {
   display: flex;
   justify-content: space-between;
@@ -129,9 +161,29 @@ body {
   padding: 45px 0;
   border-top: 4px solid white;
 }
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .mainSectionWrapper .mainSection__content__desc {
+    padding: calc(25px + 20 * (100vw - 1100px) / 500) 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 1100px) {
+  .mainSectionWrapper .mainSection__content__desc {
+    padding: calc(20px + 5 * (100vw - 767px) / 333) 0;
+  }
+}
 .mainSectionWrapper .mainSection__content__desc-title {
   max-width: 644px;
   position: relative;
+}
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .mainSectionWrapper .mainSection__content__desc-title {
+    max-width: calc(470px + 174 * (100vw - 1100px) / 500);
+  }
+}
+@media (min-width: 767px) and (max-width: 1100px) {
+  .mainSectionWrapper .mainSection__content__desc-title {
+    max-width: calc(210px + 260 * (100vw - 767px) / 333);
+  }
 }
 .mainSectionWrapper .mainSection__content__desc-title-tit {
   font-weight: 900;
@@ -141,6 +193,18 @@ body {
   line-height: 87px;
   position: relative;
   z-index: 1;
+}
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .mainSectionWrapper .mainSection__content__desc-title-tit {
+    font-size: calc(50px + 20 * (100vw - 1100px) / 500);
+    line-height: calc(64px + 4 * (100vw - 1100px) / 500);
+  }
+}
+@media (min-width: 767px) and (max-width: 1100px) {
+  .mainSectionWrapper .mainSection__content__desc-title-tit {
+    font-size: calc(30px + 20 * (100vw - 767px) / 333);
+    line-height: calc(36px + 28 * (100vw - 767px) / 333);
+  }
 }
 .mainSectionWrapper .mainSection__content__desc-title-around {
   position: absolute;
@@ -152,11 +216,28 @@ body {
   top: 41%;
   transform: translateY(-50%);
 }
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .mainSectionWrapper .mainSection__content__desc-title-around {
+    top: 30%;
+  }
+}
 .mainSectionWrapper .mainSection__content__desc-more {
   max-width: 530px;
   display: flex;
   flex-direction: column;
   gap: 72px;
+}
+@media (min-width: 1100px) and (max-width: 1600px) {
+  .mainSectionWrapper .mainSection__content__desc-more {
+    max-width: calc(470px + 174 * (100vw - 1100px) / 500);
+    gap: calc(25px + 47 * (100vw - 1100px) / 500);
+  }
+}
+@media (min-width: 767px) and (max-width: 1100px) {
+  .mainSectionWrapper .mainSection__content__desc-more {
+    max-width: calc(440px + 30 * (100vw - 767px) / 333);
+    gap: calc(20px + 5 * (100vw - 767px) / 333);
+  }
 }
 .mainSectionWrapper .mainSection__content__desc-more p {
   font-size: 16px;
