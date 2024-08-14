@@ -22,6 +22,10 @@ body {
       max-width: calc(715px + (1000 - 715) * ((100vw - 767px) / (1100 - 767)));
     }
 
+    @media (min-width: 375px) and (max-width: 767px) {
+      max-width: calc(345px + (715 - 345) * ((100vw - 375px) / (767 - 375)));
+    }
+
     &__header {
       display: flex;
       align-items: center;
@@ -187,6 +191,11 @@ body {
           padding: calc(20px + (25 - 20) * ((100vw - 767px) / (1100 - 767))) 0;
         }
 
+        @media (max-width: 767px) {
+          gap: 45px;
+          flex-direction: column;
+        }
+
         &-title {
           max-width: 644px;
           position: relative;
@@ -212,22 +221,40 @@ body {
             position: relative;
             z-index: 1;
 
+            & span {
+              background: linear-gradient(
+                to top right,
+                #692167e4,
+                #9e3867,
+                #a7741e
+              );
+
+              -webkit-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+
             @media (min-width: 1100px) and (max-width: 1600px) {
               font-size: calc(
-                50px + (70 - 50) * ((100vw - 1100px) / (1600 - 1100))
+                62px + (70 - 62) * ((100vw - 1100px) / (1600 - 1100))
               );
               line-height: calc(
-                64px + (64 - 60) * ((100vw - 1100px) / (1600 - 1100))
+                70px + (87 - 70) * ((100vw - 1100px) / (1600 - 1100))
               );
             }
 
             @media (min-width: 767px) and (max-width: 1100px) {
               font-size: calc(
-                30px + (50 - 30) * ((100vw - 767px) / (1100 - 767))
+                30px + (62 - 30) * ((100vw - 767px) / (1100 - 767))
               );
               line-height: calc(
-                36px + (64 - 36) * ((100vw - 767px) / (1100 - 767))
+                36px + (70 - 36) * ((100vw - 767px) / (1100 - 767))
               );
+            }
+
+            @media (max-width: 767px) {
+              font-size: 64px;
+              line-height: 80px;
             }
           }
 
@@ -247,7 +274,11 @@ body {
             transform: translateY(-50%);
 
             @media (min-width: 1100px) and (max-width: 1600px) {
-              top: 30%;
+              top: calc(33% + (41 - 33) * ((100vw - 767px) / (1100 - 767)));
+            }
+
+            @media (min-width: 767px) and (max-width: 1100px) {
+              width: calc(95px + (134 - 95) * ((100vw - 767px) / (1100 - 767)));
             }
           }
         }
@@ -260,7 +291,7 @@ body {
 
           @media (min-width: 1100px) and (max-width: 1600px) {
             max-width: calc(
-              470px + (644 - 470) * ((100vw - 1100px) / (1600 - 1100))
+              470px + (530 - 470) * ((100vw - 1100px) / (1600 - 1100))
             );
             gap: calc(25px + (72 - 25) * ((100vw - 1100px) / (1600 - 1100)));
           }
@@ -279,6 +310,16 @@ body {
             font-weight: 400;
             line-height: 21px;
             text-align: justify;
+            margin: 0;
+
+            @media (min-width: 767px) and (max-width: 1100px) {
+              line-height: calc(
+                20px + (21 - 20) * ((100vw - 767px) / (1100 - 767))
+              );
+            }
+            @media (max-width: 767px) {
+              text-align: left;
+            }
           }
           &-btnWrap {
             display: flex;
