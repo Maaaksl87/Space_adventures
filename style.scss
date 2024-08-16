@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 
-body {
+body,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -106,9 +114,26 @@ body {
 
       &__image {
         position: relative;
-        & img {
+
+        &-desktop {
           width: 100%;
+
+          @media (max-width: 767px) {
+            display: none;
+          }
         }
+
+        &-mob {
+          width: 100%;
+          display: none;
+          height: 320px;
+          object-fit: cover;
+
+          @media (max-width: 767px) {
+            display: flex;
+          }
+        }
+
         &__controls {
           position: absolute;
           display: flex;
@@ -280,6 +305,10 @@ body {
             @media (min-width: 767px) and (max-width: 1100px) {
               width: calc(95px + (134 - 95) * ((100vw - 767px) / (1100 - 767)));
             }
+
+            @media (min-width: 375px) and (max-width: 1100px) {
+              top: calc(24% + (33 - 24) * ((100vw - 767px) / (1100 - 767)));
+            }
           }
         }
 
@@ -343,6 +372,107 @@ body {
               width: 35px;
               height: 35px;
               border: 2px solid white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.newsSectionWrapper {
+  .newsSection {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 0 175px 110px;
+
+    &__title {
+      font-family: Orbitron;
+      font-size: 42px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 65px;
+      &-btn {
+        width: 175px;
+        height: 175px;
+        border-radius: 50%;
+        border: 2px solid white;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        align-self: flex-end;
+      }
+
+      &__newsDesc {
+        max-width: 530px;
+        &__image {
+          max-width: 530px;
+          &-img {
+            width: 100%;
+          }
+        }
+        &-date {
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18px;
+          text-align: left;
+          color: #aaaaaa;
+          padding-top: 35px;
+        }
+        &-date:first-of-type {
+          padding-top: 25px;
+        }
+        &-title {
+          font-family: Roboto;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 23px;
+          letter-spacing: 0.05em;
+          text-align: left;
+          color: #ffffff;
+          text-transform: uppercase;
+          text-decoration: underline;
+          padding: 25px 0 35px 0;
+        }
+        &__controls {
+          gap: 111px;
+          display: flex;
+          color: #ffffff;
+          padding-top: 95px;
+          &-count {
+            font-family: Orbitron;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20.06px;
+            text-align: left;
+          }
+          &__arrows {
+            gap: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &-left {
+              &-leftImg {
+                transform: rotate(180deg);
+              }
+            }
+            &-right {
+              width: 45px;
+              height: 16.04px;
             }
           }
         }
