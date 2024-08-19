@@ -519,6 +519,10 @@ h6 {
     margin: 0 auto;
     padding: 50px 0 0 110px;
 
+    @media (min-width: 375px) and (max-width: 940px) {
+      padding: 50px 0 0 0;
+    }
+
     &__title {
       font-family: Orbitron;
       font-size: 42px;
@@ -527,6 +531,10 @@ h6 {
       text-align: left;
       color: #ffffff;
       margin-bottom: 65px;
+
+      @media (min-width: 375px) and (max-width: 940px) {
+        padding-left: 30px;
+      }
     }
     &__material {
       &__cards {
@@ -534,11 +542,26 @@ h6 {
           display: flex;
           gap: 75px;
           margin-bottom: 30px;
+
+          @media (min-width: 375px) and (max-width: 940px) {
+            flex-direction: column;
+            gap: 25px;
+          }
+
           &__image {
+            max-width: 420px;
+            height: fit-content;
             &-img {
+              width: 100%;
             }
           }
           &__more {
+            width: 585px;
+            @media (min-width: 375px) and (max-width: 940px) {
+              width: calc(
+                345px + (585 - 345) * ((100vw - 375px) / (940 - 375))
+              );
+            }
             &-date {
               display: flex;
               align-items: center;
@@ -581,9 +604,17 @@ h6 {
         display: flex;
         justify-content: space-between;
         align-items: end;
+
+        @media (min-width: 375px) and (max-width: 940px) {
+          flex-direction: column;
+          align-items: center;
+          gap: 75px;
+        }
+
         &__controls {
           display: flex;
           gap: 165px;
+
           &-count {
             font-family: Orbitron;
             font-size: 16px;
@@ -591,6 +622,7 @@ h6 {
             line-height: 20px;
             text-align: left;
             color: #ffffff;
+            width: 60px;
           }
           &__arrows {
             gap: 35px;

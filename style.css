@@ -474,6 +474,11 @@ h6 {
   margin: 0 auto;
   padding: 50px 0 0 110px;
 }
+@media (min-width: 375px) and (max-width: 940px) {
+  .blogSectionWrapper .blogSection {
+    padding: 50px 0 0 0;
+  }
+}
 .blogSectionWrapper .blogSection__title {
   font-family: Orbitron;
   font-size: 42px;
@@ -483,10 +488,37 @@ h6 {
   color: #ffffff;
   margin-bottom: 65px;
 }
+@media (min-width: 375px) and (max-width: 940px) {
+  .blogSectionWrapper .blogSection__title {
+    padding-left: 30px;
+  }
+}
 .blogSectionWrapper .blogSection__material__cards__card {
   display: flex;
   gap: 75px;
   margin-bottom: 30px;
+}
+@media (min-width: 375px) and (max-width: 940px) {
+  .blogSectionWrapper .blogSection__material__cards__card {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+.blogSectionWrapper .blogSection__material__cards__card__image {
+  max-width: 420px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.blogSectionWrapper .blogSection__material__cards__card__image-img {
+  width: 100%;
+}
+.blogSectionWrapper .blogSection__material__cards__card__more {
+  width: 585px;
+}
+@media (min-width: 375px) and (max-width: 940px) {
+  .blogSectionWrapper .blogSection__material__cards__card__more {
+    width: calc(345px + 240 * (100vw - 375px) / 565);
+  }
 }
 .blogSectionWrapper .blogSection__material__cards__card__more-date {
   display: flex;
@@ -527,6 +559,13 @@ h6 {
   justify-content: space-between;
   align-items: end;
 }
+@media (min-width: 375px) and (max-width: 940px) {
+  .blogSectionWrapper .blogSection__material__controlsWrap {
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+  }
+}
 .blogSectionWrapper .blogSection__material__controlsWrap__controls {
   display: flex;
   gap: 165px;
@@ -538,6 +577,7 @@ h6 {
   line-height: 20px;
   text-align: left;
   color: #ffffff;
+  width: 60px;
 }
 .blogSectionWrapper .blogSection__material__controlsWrap__controls__arrows {
   gap: 35px;
