@@ -19,6 +19,7 @@ h6 {
   max-width: 1300px;
   margin: 0 auto;
   padding-bottom: 175px;
+  flex: 1;
 }
 @media (min-width: 1100px) and (max-width: 1600px) {
   .mainSectionWrapper .mainSection {
@@ -338,41 +339,40 @@ h6 {
   height: 35px;
   border: 2px solid white;
 }
-
-.newsSectionWrapper .newsSection {
+.mainSectionWrapper .newsSectionWrapper .newsSection {
   max-width: 1300px;
   margin: 0 auto;
   padding: 50px 0 175px 110px;
   border-bottom: 4px solid white;
 }
 @media screen and (max-width: 940px) {
-  .newsSectionWrapper .newsSection {
+  .mainSectionWrapper .newsSectionWrapper .newsSection {
     padding-left: calc(40px + 70 * (100vw - 940px) / 160);
     padding-top: calc(45px + 5 * (100vw - 940px) / 160);
   }
 }
-.newsSectionWrapper .newsSection__title {
+.mainSectionWrapper .newsSectionWrapper .newsSection__title {
   font-family: Orbitron;
   font-size: 42px;
   font-weight: 600;
   color: #ffffff;
 }
 @media screen and (max-width: 940px) {
-  .newsSectionWrapper .newsSection__title {
+  .mainSectionWrapper .newsSectionWrapper .newsSection__title {
     padding-left: 30px;
   }
 }
-.newsSectionWrapper .newsSection__content {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content {
   display: flex;
   justify-content: space-between;
   padding-top: 65px;
 }
 @media screen and (max-width: 940px) {
-  .newsSectionWrapper .newsSection__content {
+  .mainSectionWrapper .newsSectionWrapper .newsSection__content {
     flex-direction: column;
   }
 }
-.newsSectionWrapper .newsSection__content-btn {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content-btn {
   width: 175px;
   height: 175px;
   border-radius: 50%;
@@ -390,29 +390,29 @@ h6 {
   align-self: flex-end;
 }
 @media screen and (max-width: 940px) {
-  .newsSectionWrapper .newsSection__content-btn {
+  .mainSectionWrapper .newsSectionWrapper .newsSection__content-btn {
     order: 2;
     align-self: center;
   }
 }
-.newsSectionWrapper .newsSection__content__newsDesc {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc {
   max-width: 530px;
 }
 @media screen and (max-width: 940px) {
-  .newsSectionWrapper .newsSection__content__newsDesc {
+  .mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc {
     align-self: center;
     padding-bottom: 75px;
   }
 }
-.newsSectionWrapper .newsSection__content__newsDesc__image {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc__image {
   max-width: 530px;
   height: 185px;
 }
-.newsSectionWrapper .newsSection__content__newsDesc__image-img {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc__image-img {
   width: 100%;
   height: 100%;
 }
-.newsSectionWrapper .newsSection__content__newsDesc-date {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc-date {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
@@ -421,10 +421,10 @@ h6 {
   color: #aaaaaa;
   padding-top: 35px;
 }
-.newsSectionWrapper .newsSection__content__newsDesc-date:first-of-type {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc-date:first-of-type {
   padding-top: 25px;
 }
-.newsSectionWrapper .newsSection__content__newsDesc-title {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc-title {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
@@ -436,50 +436,49 @@ h6 {
   text-decoration: underline;
   padding: 25px 0 35px 0;
 }
-.newsSectionWrapper .newsSection__content__newsDesc__controls {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc__controls {
   gap: 111px;
   display: flex;
   color: #ffffff;
   padding-top: 67px;
 }
 @media screen and (max-width: 940px) {
-  .newsSectionWrapper .newsSection__content__newsDesc__controls {
+  .mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc__controls {
     justify-content: space-between;
   }
 }
-.newsSectionWrapper .newsSection__content__newsDesc__controls-count {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc__controls-count {
   font-family: Orbitron;
   font-size: 16px;
   font-weight: 500;
   line-height: 20.06px;
   text-align: left;
 }
-.newsSectionWrapper .newsSection__content__newsDesc__controls__arrows {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc__controls__arrows {
   gap: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.newsSectionWrapper .newsSection__content__newsDesc__controls__arrows-left-leftImg {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc__controls__arrows-left-leftImg {
   transform: rotate(180deg);
 }
-.newsSectionWrapper .newsSection__content__newsDesc__controls__arrows-right {
+.mainSectionWrapper .newsSectionWrapper .newsSection__content__newsDesc__controls__arrows-right {
   width: 45px;
   height: 16.04px;
 }
-
-.blogSectionWrapper .blogSection {
+.mainSectionWrapper .blogSectionWrapper .blogSection {
   max-width: 1300px;
   margin: 0 auto;
   padding: 50px 0 0 110px;
 }
 @media (min-width: 375px) and (max-width: 940px) {
-  .blogSectionWrapper .blogSection {
+  .mainSectionWrapper .blogSectionWrapper .blogSection {
     padding: 50px 0 0 0;
   }
 }
-.blogSectionWrapper .blogSection__title {
+.mainSectionWrapper .blogSectionWrapper .blogSection__title {
   font-family: Orbitron;
   font-size: 42px;
   font-weight: 600;
@@ -489,38 +488,38 @@ h6 {
   margin-bottom: 65px;
 }
 @media (min-width: 375px) and (max-width: 940px) {
-  .blogSectionWrapper .blogSection__title {
+  .mainSectionWrapper .blogSectionWrapper .blogSection__title {
     padding-left: 30px;
   }
 }
-.blogSectionWrapper .blogSection__material__cards__card {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__cards__card {
   display: flex;
   gap: 75px;
   margin-bottom: 30px;
 }
 @media (min-width: 375px) and (max-width: 940px) {
-  .blogSectionWrapper .blogSection__material__cards__card {
+  .mainSectionWrapper .blogSectionWrapper .blogSection__material__cards__card {
     flex-direction: column;
     gap: 25px;
   }
 }
-.blogSectionWrapper .blogSection__material__cards__card__image {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__cards__card__image {
   max-width: 420px;
   height: -moz-fit-content;
   height: fit-content;
 }
-.blogSectionWrapper .blogSection__material__cards__card__image-img {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__cards__card__image-img {
   width: 100%;
 }
-.blogSectionWrapper .blogSection__material__cards__card__more {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__cards__card__more {
   width: 585px;
 }
 @media (min-width: 375px) and (max-width: 940px) {
-  .blogSectionWrapper .blogSection__material__cards__card__more {
+  .mainSectionWrapper .blogSectionWrapper .blogSection__material__cards__card__more {
     width: calc(345px + 240 * (100vw - 375px) / 565);
   }
 }
-.blogSectionWrapper .blogSection__material__cards__card__more-date {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__cards__card__more-date {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -532,7 +531,7 @@ h6 {
   line-height: 18px;
   background-color: #ffffff;
 }
-.blogSectionWrapper .blogSection__material__cards__card__more-title {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__cards__card__more-title {
   max-width: 585px;
   font-family: Roboto;
   font-size: 20px;
@@ -545,7 +544,7 @@ h6 {
   text-decoration: underline;
   margin: 25px 0 20px 0;
 }
-.blogSectionWrapper .blogSection__material__cards__card__more-desc {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__cards__card__more-desc {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
@@ -554,23 +553,23 @@ h6 {
   color: #aaaaaa;
   max-width: 475px;
 }
-.blogSectionWrapper .blogSection__material__controlsWrap {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__controlsWrap {
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
 @media (min-width: 375px) and (max-width: 940px) {
-  .blogSectionWrapper .blogSection__material__controlsWrap {
+  .mainSectionWrapper .blogSectionWrapper .blogSection__material__controlsWrap {
     flex-direction: column;
     align-items: center;
     gap: 75px;
   }
 }
-.blogSectionWrapper .blogSection__material__controlsWrap__controls {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__controlsWrap__controls {
   display: flex;
   gap: 165px;
 }
-.blogSectionWrapper .blogSection__material__controlsWrap__controls-count {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__controlsWrap__controls-count {
   font-family: Orbitron;
   font-size: 16px;
   font-weight: 500;
@@ -579,21 +578,21 @@ h6 {
   color: #ffffff;
   width: 60px;
 }
-.blogSectionWrapper .blogSection__material__controlsWrap__controls__arrows {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__controlsWrap__controls__arrows {
   gap: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.blogSectionWrapper .blogSection__material__controlsWrap__controls__arrows-left-leftImg {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__controlsWrap__controls__arrows-left-leftImg {
   transform: rotate(180deg);
 }
-.blogSectionWrapper .blogSection__material__controlsWrap__controls__arrows-right {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__controlsWrap__controls__arrows-right {
   width: 45px;
   height: 16px;
 }
-.blogSectionWrapper .blogSection__material__controlsWrap-btn {
+.mainSectionWrapper .blogSectionWrapper .blogSection__material__controlsWrap-btn {
   width: 175px;
   height: 175px;
   border-radius: 50%;
@@ -609,4 +608,31 @@ h6 {
   color: #ffffff;
   text-transform: uppercase;
   align-self: flex-end;
+}
+.mainSectionWrapper .footerSection {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #303030;
+}
+.mainSectionWrapper .footerSection__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.mainSectionWrapper .footerSection__wrapper-logo {
+  padding: 17px 0;
+}
+.mainSectionWrapper .footerSection__wrapper-linksWrap a {
+  padding: 27px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
